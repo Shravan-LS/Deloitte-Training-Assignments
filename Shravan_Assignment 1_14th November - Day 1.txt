@@ -16,3 +16,7 @@ which prevented it from fulfilling the request.
 4.   What is No-Sql Databases?
 Answer: NoSQL database technology stores information in JSON documents instead of columns and rows used by relational databases. 
 NoSQL stands for “not only SQL” rather than “no SQL” at all.
+
+5. What is IIS?
+Answer: IIS is Internet Information Services (IIS) which is a flexible, general-purpose web server from Microsoft that runs on 
+Windows systems to serve requested HTML pages or files.
