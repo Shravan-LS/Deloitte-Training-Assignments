@@ -1,7 +1,8 @@
 Assignment-2
 ~~~~~~~~~~~~
 1. How to display images in title bar?
-Answer: By providing a favicon.
+Answer: Convert the image into .ico for ico format
+	Place the file in the directory.
 
 
 2. What is the purpose of "alt" attribute of img tag?
