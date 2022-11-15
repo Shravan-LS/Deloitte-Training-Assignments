@@ -1,0 +1,9 @@
+1. What is the purpose of style tags and style attributes?
+Answer: Style Tag: The HTML <style> tag is used to embed CSS into the HTML document and define style information (CSS) for a document. 
+        It can be placed within the <body> tag or within the <head> tag. 
+        This tag is also commonly referred to as the <style> element.
+        
+        Style Attribute: The style attribute specifies an inline style for an element. It is used to apply the styling declarations to be applied to the element.
+        
+        Inline: An inline CSS is used to apply a unique style to a single HTML element. 
+        An inline CSS uses the style attribute of an HTML element.
