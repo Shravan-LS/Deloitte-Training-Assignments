@@ -1,0 +1,15 @@
+1. What is Validation in Client Side Programming? 
+Answer: Client Side Validation is an initial check by identifying 
+        invalid data at the client side. The user can fix this 
+        invalid information (input) straight away.
+
+Example: If the input is submitted for a phone number or email, 
+         a JavaScript validator would provide an error if anything 
+         is submitted that does not confirm to a phone number or email.
+         
+2. What are the advantages of performing Validations?
+Answers: 
+          
+          a. It ensures all expectations are met.
+          b. It helps to take corrective measures to avoid any mismatch between the expected and actual results.
+          c. It improves the reliability of the of the end-product. 
