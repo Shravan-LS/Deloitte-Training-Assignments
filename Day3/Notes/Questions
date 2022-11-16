@@ -39,3 +39,9 @@ Hidden fields can also be used to pass information back to scripts.
 Read more: https://html.com/input-type-hidden/#ixzz7kmYUgWBg
 
 
+5. Diff. between  <input type="submit"  />   and <button></button>  ?
+Answer:
+
+A 'button' is just that, a button, to which you can add additional functionality using Javascript. Ex: Next Page, PrevPage
+A 'submit' input type has the default functionality of submitting the form it's placed in. 
+
