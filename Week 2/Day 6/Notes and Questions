@@ -27,4 +27,16 @@ Answer: Position: Relative places an element relative to its current position wi
 	Answer: text-shadow: 2px 2px 10px #ff0000;    /* In this the 10px is used for blurring the shadow */
 	
 	d. Other requirements as per the image
+	
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+Answer: Refer Day6 Assignment (image_gallery and ms files) saved.
+
+5.  How to hide an element uisng CSS?
+Answer: Ans: 1) display: none
+     2) visibility: hidden;
+     3) Use scale (0) to shrink an element until it’s no longer visible. 
+     4) Apply translate (-999px, 0px) to shift an element off screen.
+
+6. Create web page to apply animation based on the position. Object should move from left to right.
+Answer: Refer Day6 Assignment (animation) saved.
 
