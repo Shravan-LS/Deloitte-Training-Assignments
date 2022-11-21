@@ -15,4 +15,10 @@ Answer: Position: Relative places an element relative to its current position wi
         Position property-----
         Absolute - The element is positioned relative to its first positioned (not static) ancestor element
         Relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+        
+3. How to implement following requirements in CSS3 (As per the image):
+        a. Apply space between words
+	b. Apply space between letters
+        c. Apply shadow for each character in the text
+	d. Other requirements as per the image
 
