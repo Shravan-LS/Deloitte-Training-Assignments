@@ -1,0 +1,13 @@
+/* Max Width 850 px*/
+
+.container{
+    border: 5px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div div{
+    flex: 100%;
+    background-color: rgb(164, 204, 204);
+}
