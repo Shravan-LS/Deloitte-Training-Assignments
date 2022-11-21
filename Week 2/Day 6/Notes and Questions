@@ -18,7 +18,13 @@ Answer: Position: Relative places an element relative to its current position wi
         
 3. How to implement following requirements in CSS3 (As per the image):
         a. Apply space between words
+	Answer: word-spacing: 10px;
+	
 	b. Apply space between letters
+	Answer: letter-spacing: 2px;
+	
         c. Apply shadow for each character in the text
+	Answer: text-shadow: 2px 2px 10px #ff0000;    /* In this the 10px is used for blurring the shadow */
+	
 	d. Other requirements as per the image
 
