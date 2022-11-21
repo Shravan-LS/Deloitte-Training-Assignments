@@ -1,0 +1,29 @@
+span{
+    font-style: italic;
+    font-size: 40px;
+    color: maroon;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    text-shadow: 3px 3px 10px red;
+    font-size: 50px;
+}
+
+div{
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px
+}
+
+.micro{
+    word-spacing: 20px;
+}
+
+.solutions{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 20px;
+}
