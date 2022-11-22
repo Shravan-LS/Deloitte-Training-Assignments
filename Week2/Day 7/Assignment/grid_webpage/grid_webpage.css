@@ -1,0 +1,15 @@
+*{
+    margin: 10px 5px;
+    background-color: rgba(224, 221, 221, 0.591);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(27, 136, 194);
+    font-weight: bold;
+}
