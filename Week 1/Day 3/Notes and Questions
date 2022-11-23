@@ -1,0 +1,47 @@
+1. What is Validation in Client Side Programming? 
+Answer: Client Side Validation is an initial check by identifying 
+        invalid data at the client side. The user can fix this 
+        invalid information (input) straight away.
+
+Example: If the input is submitted for a phone number or email, 
+         a JavaScript validator would provide an error if anything 
+         is submitted that does not confirm to a phone number or email.
+         
+2. What are the advantages of performing Validations?
+Answers: 
+          
+          a. It ensures all expectations are met.
+          b. It helps to take corrective measures to avoid any mismatch between the expected and actual results.
+          c. It improves the reliability of the of the end-product. 
+          d. Server side processing time is reducted.
+          
+3. What is Querystring?
+Answer: On the internet, a Query string is the part of a link (otherwise known as a hyperlink or a uniform resource 
+        locator, URL for short) which assigns values to specified attributes (known as keys or parameters). Typical 
+        link containing a query string is as follows: http://example.com/over/there?
+        
+4. What is <input type="hidden"  />  ? Why do we use?
+Answer: The <input type="hidden"> defines a hidden input field.
+A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+Why: Hidden fields allow us to send all kinds of information along with a form message, without the user having to be involved in the process. 
+This may include security tokens, or the name of the relevant row in the database. 
+The user does not need to see this data, but it is passed back to the server on submission so that scripts function correctly behind the scenes.
+
+
+Additional
+Hidden fields are used programatically, to pass information about the current page to the server.
+For example, if a user fills out an enquiry form, we may want to obtain their IP address using a snippet of PHP.
+We may also want to grab the URL of the referring page. You can see this in action in our code sample; the form captures the information, 
+but does not display it.  
+Hidden fields can also be used to pass information back to scripts. 
+
+Read more: https://html.com/input-type-hidden/#ixzz7kmYUgWBg
+
+
+5. Diff. between  <input type="submit"  />   and <button></button>  ?
+Answer:
+
+A 'button' is just that, a button, to which you can add additional functionality using Javascript. Ex: Next Page, PrevPage
+A 'submit' input type has the default functionality of submitting the form it's placed in. 
+
