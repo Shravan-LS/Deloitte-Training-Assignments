@@ -1,0 +1,12 @@
+1. Find the details about "List" attribute in html5 forms. <datalist>
+Answer: The datalist tag is introduced in HTML5. The <datalist> tag should be used with
+        an <input< element that contains a "list" attribute. The value of "list" attribute is linked with the datalist id.
+        
+        
+        The <datalist> tag specifies a list of pre-defined options for an <input> element.
+        The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+        The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds them together).
+
+
+        
+        https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_datalist
