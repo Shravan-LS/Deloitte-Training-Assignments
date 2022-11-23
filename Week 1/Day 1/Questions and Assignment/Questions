@@ -1,0 +1,7 @@
+1. How to display images in title bar?
+Answer: Convert the image into .ico for favicon format
+	Place the file in the directory.
+
+
+2. What is the purpose of "alt" attribute of img tag?
+Answer: The alt attribute of image tag is to display and alternate text for the image when the image is unable to display.
