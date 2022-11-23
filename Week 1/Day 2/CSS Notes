@@ -7,3 +7,19 @@ Answer: Style Tag: The HTML <style> tag is used to embed CSS into the HTML docum
         
         Inline: An inline CSS is used to apply a unique style to a single HTML element. 
         An inline CSS uses the style attribute of an HTML element.
+        
+2. Why do we use  ~  and >  symbols in css selectors? div ~  p ; div > p
+Answer: 
+~ Sign:
+It is general sibling combinator and similar to Adjacent sibling combinator. 
+The difference is that the second selector does NOT have to immediately follow the first 
+one means It will select all elements that is preceded by the former selector.
+
+> Sign:
+It will target elements which are DIRECT children of a particular element.
+
++ Sign:
+It is Adjacent sibling combinator. It combines two sequences of simple selectors having 
+the same parent and the second one must come IMMEDIATELY after the first.
+
+Reference: https://techbrij.com/css-selector-adjacent-child-sibling
