@@ -1,0 +1,35 @@
+*{
+    margin: 20px;
+}
+
+.container{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub{
+    width: 100%;
+}
+
+.btn:hover{ 
+    background-color: white !important;
+    color: rgb(3, 105, 189) !important; 
+    border: 1px #1779ba solid;
+}
+
+label{
+    color: red;
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+    border: 1px solid red !important;
+}
