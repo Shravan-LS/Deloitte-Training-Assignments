@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank_acc_opening.css">
+    <title>Bank Account Opening</title>
+</head>
+<body>
+    <h1>Bank Account Opening Form</h1>
+    <hr>
+<div class="container">
+    <form action="">
+<!-- Acount Name -->
+        <div class="acc_name">
+            <label>Name of Account <span class="man">*</span></label>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Last Name" required>
+        </div>
+<!-- Account Number -->
+        <div class="acc_number">
+            <label>Account Number<span class="man">*</span></label>
+            <input type="number" autofocus required>
+        </div>
+<!-- Account Type -->
+        <div class="acc_type">
+            <label>Account Type</label>
+        <div>
+            <input type="radio" name="account">
+            <span>Current Account</span>
+        </div>
+        <div>
+            <input type="radio" name="account">
+            <span>Saving Account</span>
+        </div>
+        </div>
+<!-- Address -->
+        <div class="address">
+            <label>Address <span class="man">*</span></label>
+            <textarea name="address" id="arresss" cols="30" rows="2" placeholder="Please Enter Full Address" required></textarea>
+
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" pattern="[0-9]{6}" required placeholder="Pin Code">
+        </div>
+<!-- Occupation -->
+        <div class="occupation">
+            <label>Occupation</label>
+            <select name="occupation" id="occupation">
+                <option>Private Sector</option>
+                <option>Public Sector</option>
+                <option>Self Employed</option>
+                <option>Student</option>
+            </select>
+        </div>
+<!-- Phone Number  -->
+        <div class="contact">
+            <label>Phone Number <span class="man">*</span></label>
+            <select name="contact" id="contact">
+                <option>Home</option>
+                <option>Office</option>
+                <option>Others</option>
+            </select>
+            <input type="number" placeholder="Enter Mobile Number" required>
+        </div>
+<!-- Submit -->
+        <div class="submit">
+            <input type="submit">
+        </div>
+<!-- I agree -->
+        <div>
+            <input type="checkbox"> I agree to the terms & conditions. <span class="man">*</span>
+        </div>
+    </form>
+</div>
+</body>
+</html>
