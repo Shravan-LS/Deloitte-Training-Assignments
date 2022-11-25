@@ -1,0 +1,74 @@
+<!-- Create a web page to process customer data using local storage. -->
+<!-- Save Data in Local Storage and Display in Alert -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer - Local Storage</title>
+</head>
+<body>
+    <h3>Storing Customer Preference in Local Storage</h3>
+    <hr>
+
+    <form action="anotherCust_js.html" method="GET">
+        
+        <fieldset>
+            
+            <legend>Customer Preference</legend>
+
+            <legend>Customer Name</legend>
+            <input type="text" name="cname" id="cname">
+            <br><br>
+
+            <legend>Joined Date</legend>
+            <input type="date" name="jodate" id="jodate">
+            <br><br>
+
+            <legend>Favourite Color</legend>
+            <input type="color" name="fcolor" id="fcolor">
+            <br><br>
+            
+            <legend>Font Color</legend>
+            <input type="color" name="fnt" id="fnt">
+            <br><br>
+
+            <input type="button" value="Save Customer Data" onclick="fn_saveData()">
+            <input type="submit" value="Get Customer Data" onclick="fn_getData()">
+        </fieldset>
+
+        <br>
+            
+        
+    </form>
+
+    <script>
+        function fn_saveData()
+        {
+            // Get Data From Input Fields
+            var custName= document.getElementById("cname");
+            var jDate = document.getElementById("jodate");
+            var favColor = document.getElementById("fcolor");
+            var fntColor = document.getElementById("fnt")
+
+
+            // Create Obj with input field Values
+            var custObj = {};
+            custObj.cname= custName.value;
+            custObj.jodate = jDate.value;
+            custObj.fcolor = favColor.value;
+            custObj.fontColor = fntColor.value;
+
+            // Convert the object into JSON string
+            var resultString = JSON.stringify(custObj);
+
+            // Storing the string in localStorage
+            localStorage.setItem("CustData",resultString);
+            alert("Customer Data Stored in Local Storage")
+        }
+
+
+    </script>
+</body>
+</html>
