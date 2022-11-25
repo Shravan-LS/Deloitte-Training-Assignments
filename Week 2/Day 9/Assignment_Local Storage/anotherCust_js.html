@@ -1,0 +1,51 @@
+<!-- Create a web page to process customer data using local storage. -->
+<!-- Save Data in Local Storage and Display in Alert -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer - Local Storage</title>
+</head>
+<body id="col">
+    
+    <h1 id="h1"></h1> 
+    <p id="p1"></p>     
+
+    <script>
+        // Getting data from Local Storage
+        var dataStr = localStorage.getItem("CustData");
+        
+       
+
+        // Converting from String to Object
+        resultObj = JSON.parse(dataStr);
+
+        
+        var WelcomeObj = document.getElementById("h1");
+        var DateObj = document.getElementById("p1")
+        var bgColorObj = document.getElementById("col")
+
+        console.log(dataStr)
+        if(resultObj.cname == "")
+        {
+            document.body.style.backgroundColor="white";
+            document.body.style.color="black";
+           WelcomeObj.innerHTML="Welcome to Guest user";
+           DateObj.innerHTML="Date is empty";
+        }
+        else{
+            WelcomeObj.innerHTML= "Welcome " + resultObj.cname; 
+        DateObj.innerHTML= " I have joined on" + " " +resultObj.jodate;
+        document.body.style.backgroundColor=resultObj.fcolor;
+        document.body.style.color=resultObj.fontColor;
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>
