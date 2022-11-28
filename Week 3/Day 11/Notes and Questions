@@ -1,4 +1,14 @@
-How to add or remove CSS classes to html elements using JavaScript?
-Answer: To add the CSS classes to an element we use addClass() method, and to remove the CSS classes we use removeClass() method.
+1. How to add or remove CSS classes to html elements using JavaScript?
+Answer: Object.classList.add("cssStyle");
 
-Example: 
+Example: paraObj.classList.add('classname');
+
+2. What is CDN? What are the advantages of CDN?
+Answer: CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content.
+
+3. How to align justify using Bootstrap?
+Answer:  .text-justify
+          The text can be justified by using the .text-justify class and for left, right, and center alignment of text, use the text-left, text-right and text-center classes respectively.
+
+
+
