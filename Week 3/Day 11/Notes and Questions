@@ -1,0 +1,4 @@
+How to add or remove CSS classes to html elements using JavaScript?
+Answer: To add the CSS classes to an element we use addClass() method, and to remove the CSS classes we use removeClass() method.
+
+Example: 
