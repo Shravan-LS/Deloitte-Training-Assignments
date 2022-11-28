@@ -7,8 +7,8 @@ Example: paraObj.classList.add('classname');
 Answer: CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content.
 
 3. How to align justify using Bootstrap?
-Answer:  .text-justify
-          The text can be justified by using the .text-justify class and for left, right, and center alignment of text, use the text-left, text-right and text-center classes respectively.
+Answer:  Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing,
+         it does make word-spacing more random and therefore harder to read.
 
 
 
