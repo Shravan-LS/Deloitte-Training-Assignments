@@ -1,0 +1,21 @@
+1. What is Clearfix class? Why do we use?
+Answer: Clearfix class is used to automatically clear of fix its elements.
+        Usually used in float layout. In CSS when two floated elements are stacked next to each other the parent container ends up with a height of 0,
+        and it can easily wreak havoc on a layout.
+        
+        Bootstrap: Clearfix property clear all the floated content of the element that it is applied to.
+        It is also used to clear floated content within a container. Example 2: With clearfix property,
+        Without using the clearfix class, the parent div may not wrap around the children button elements
+        properly and can cause a broken layout.
+        
+2. How to hide the elements using Bootstrap?
+Answer: To hide elements simply use the .d-none class or one of the .d-{sm,md,lg,xl}-none classes for any responsive screen variation.
+        
+        To show an element only on a given interval of screen sizes you can combine one .d-*-none class with a .d-*-* class,
+        for example .d-none .d-md-block .d-xl-none will hide the element for all screen sizes except on medium and large devices.
+        
+        Example: <div class="d-lg-none">hide on screens wider than lg</div>
+                 <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+
+
+Reference: https://getbootstrap.com/docs/4.0/utilities/display/#:~:text=To%20hide%20elements%20simply%20use,for%20any%20responsive%20screen%20variation.
