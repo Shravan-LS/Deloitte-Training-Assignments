@@ -19,3 +19,15 @@ Answer: To hide elements simply use the .d-none class or one of the .d-{sm,md,lg
 
 
 Reference: https://getbootstrap.com/docs/4.0/utilities/display/#:~:text=To%20hide%20elements%20simply%20use,for%20any%20responsive%20screen%20variation.
+
+3. What is spinner class in Bootstrap? How to create spinner in Bootstrap?
+Answer: Bootstrap “spinners” can be used to show the loading state in your projects.
+        They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them.
+        You will, however, need some custom JavaScript to toggle their visibility. Their appearance,
+        alignment, and sizing can be easily customized with our amazing utility classes.
+        
+        Example: <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                </div>
+
+Reference: https://getbootstrap.com/docs/5.2/components/spinners/#about
