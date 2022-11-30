@@ -1,0 +1,36 @@
+.box {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.box-1 {
+  font-size: 3rem;
+  color: red;
+}
+
+.box-2 {
+  font-size: 4rem;
+  color: red;
+}
+
+.box-3 {
+  font-size: 5rem;
+  color: red;
+}
+
+.box-4 {
+  font-size: 6rem;
+  color: green;
+}
+
+.box-5 {
+  font-size: 7rem;
+  color: green;
+}
+
+.box-6 {
+  font-size: 8rem;
+  color: green;
+}/*# sourceMappingURL=customstyles.css.map */
