@@ -1,0 +1,50 @@
+@import 'header';
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;   
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.links{
+    margin: 30px 0px;
+}
+
+.fancybutton{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+    padding: 10px 50px;
+}
+
+.button{
+    color: white;
+    &:extend(.fancybutton);
+}
+
+.theme(@themecolor)
+{
+    width: 300px;
+    height: 300px;
+    border: 2px @themecolor dotted;
+    padding: 10px;
+    box-shadow: 10px 10px 10px @themecolor;
+}   
+
+.circle{
+    .theme(red);
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.square{
+    .theme(yellow);
+}
