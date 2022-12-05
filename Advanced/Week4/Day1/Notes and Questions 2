@@ -1,0 +1,25 @@
+5. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+Ans: Yes, it is possible to disable Javascript in browser. 
+  
+      Chrome Browser - Android - Turn JavaScript On / Off
+      Apps icon. (Google) Chrome. . If unavailable, swipe up from the center of the display then tap. Chrome. .
+      Tap the. Menu icon. (upper-right).
+      Tap. Settings. .
+      From the Advanced section, tap. Site settings. .
+      Tap. JavaScript. .
+      Tap the. JavaScript switch. to turn on or off .
+
+
+6. What is the difference between undefined and not defined in JavaScript?
+Ans: An "undefined" indicates that a variable has been declared but not given a value,  
+     while "not defined" indicates that a variable does not exist.
+
+7. Difference between ==  and ===?
+Ans: The main difference between the == and === operator in javascript is that the == operator does
+      the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.
+      
+      == in JavaScript is used for comparing two variables, but it ignores the datatype of variable.
+      === is used for comparing two variables, but this operator also checks datatype and compares two values.
+
+8. What does the isNaN() function?
+Ans: The isNaN() function determines whether a value is NaN.
