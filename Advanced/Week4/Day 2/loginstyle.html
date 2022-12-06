@@ -1,0 +1,62 @@
+// 2.  Update the login example to apply styles to result message. 
+		a.  Welcome message display in Green color
+		b.  Invalid message display in Red color
+		
+	Hint : Apply styles to html tags using javascript
+
+3.   Create a web page to process product details using JavaScript.  Calculate total amount based on the given values.  (Refer the Image)
+
+4.   Create a web page to perform all math operations (Add, Sub, Multiply) using JavaScript. (Refer the Image)
+
+Drive Link:  https://drive.google.com/drive/folders/1eStzH6xIlz4ghDzFW2mTBYM-LZR6UwCF //
+
+
+
+
+
+///////////////////////////////////////////////////// Login Style //////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Style</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Login Form</legend>
+        User Name: <input id="uname" type="text" placeholder="User Name">
+        <br> <br>
+
+        Password: <input type="password" id="password">
+        
+        <input type="submit" onclick="valid()">
+    </fieldset>
+    
+    <p id="para"></p>
+
+    <script>
+        function valid()
+        {
+            var pt = document.getElementById("para")
+            var username = document.getElementById("uname");
+            var pass = document.getElementById('password');
+
+            usrname = username.value;
+            pword = pass.value;
+
+            if(usrname == "Shravan" && pword == "12345"){
+                pt.innerHTML = "Welcome " + usrname;
+                pt.style.color = "green";
+            }
+            else{
+                pt.innerHTML = "Invalid Message";
+                pt.style.color = "red";
+            }
+        }
+
+    </script>
+</body>
+</html>
