@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+    <style>
+
+        table td{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operations on Array in JS</h1>
+    <hr>
+    
+    <input type="button" value="Show Table Values" id="btn" onclick="clickk()">
+    
+    <div>
+        <table id="table_str">
+
+        </table>
+    </div>
+
+    <script>
+        var tab = document.getElementById("table_str");
+        var arr = ["CSS", "HTML", "JavaScript", "CSS 3", "Angular CSS", "Angular JS", "BootStrap", "SASS", "LESS", "JQuery", "HTML5", "CSS3", "HTML", "Angular CSS", "Angular JS", "BootStrap"];
+
+        function clickk()
+        {
+            tab.style.border= "1px solid green"
+            for(i=0; i<arr.length; i++)
+            {
+                tab.innerHTML += "<tr><td>" + (i+1) + "</td><td>" + arr[i] + "</td></tr>";
+            }
+        }
+    </script>
+</body>
+</html>
