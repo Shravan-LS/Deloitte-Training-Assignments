@@ -8,3 +8,8 @@ Answer: BOM is a Browser Object Model, which is a window object supported by all
         e.g. document and all traversal you would do in it, events, etc.
         The BOM is the Browser Object Model, which deals with browser components aside from the document, 
         like history, location, navigator and screen (as well as some others that vary by browser).
+        
+ 2. What is event target property in javascript?
+Answer: The target event property returns the element that triggered the event. The target property gets the element
+        on which the event originally occurred, opposed to the currentTarget property, which always refers to the element whose
+        event listener triggered the event.
