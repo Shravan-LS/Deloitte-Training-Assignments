@@ -9,3 +9,11 @@ Answer: Regular expression is a sequence of character which define a specific pa
       Email address validation through regular expression - /^w+[+.w-]*@([w-]+.)*w+[w-]*.([a-z]{2,4}|d+)$/i
       
     Reference:  https://www.formget.com/regular-expression-for-email/#:~:text=Regular%20Expression%20to%20Validate%20an%20Email%20Address%20Regualr,expression.%20we%20can%20make%20regular%20expression%20like%20%28%E2%80%9C%2FABC%2F%E2%80%9D%2C%E2%80%9DAb_123.Cd%E2%80%9D%2C%E2%80%9Dabc123.-%40%26%E2%80%9D%E2%80%A6%29
+
+
+5. Find the details about following methods of Array: Find(),  FindIndex(),  Filter()
+Answer: find() : Returns the value of the first element that passes a test.
+        findIndex() : Similar to "find" function but returns the index.
+        filter() :  Returns an array filtered down to just the elements from the original array that pass the test implemented by the provided function.
+
+			
