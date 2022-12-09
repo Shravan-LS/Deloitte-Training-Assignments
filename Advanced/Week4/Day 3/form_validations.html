@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <hr>
+
+    <form onsubmit="validat(event)">
+        <fieldset>
+            <legend>Form</legend>
+                Customer Name: <input type="text" id="cname"><span id="cnamev">*</span>
+                <br><br>
+                Source Station: <input type="text" id="srcstn">
+                <br><br>
+                Destination Station: <input type="text" name="" id="dststn"><span id="dststnv"></span>
+                <br><br>
+                Contact Number: <input type="tel" id="cnum"><span id="cnumv">*</span>
+                <br><br>
+
+            <input type="submit" value="Submit" id="sub">
+        </fieldset>
+    </form>
+
+    <script>
+        var cname = document.getElementById("cname");
+        var srcstn = document.getElementById("srcstn");
+        var dststn = document.getElementById("dststn");
+        var cnum = document.getElementById("cnum");
+        
+
+        
+        function validat(e){ 
+            e.preventDefault();
+            
+            // For Valid Name 
+            var cnamevalidate = document.getElementById("cnamev");
+             
+            if(cname.value == "")
+            
+            {   
+                cnamev.style.color="red";
+                cnamevalidate.innerHTML = "  This field cannot be empty";
+            }
+            else
+            {
+                cnamev.style.color="lightgreen";
+                cnamev.textContent=" Valid Input";
+            }
+
+            // For Valid Source and Destination Station 
+            var dststnvalidate = document.getElementById("dststnv");
+            if(srcstn.value.toUpperCase() == dststn.value.toUpperCase())
+            {
+                dststnvalidate.style.color="red"
+                dststnvalidate.innerHTML = "Source and Destination Station Cannot be the same";
+            }
+            else
+            {
+                dststnvalidate.style.color="lightgreen";
+                dststnvalidate.textContent = "Hurray";
+            }
+
+            // For Valid Contact Number 
+            var cnumvalidate = document.getElementById("cnumv");
+            if(cnum.value.length != 10 || typeof(parseInt(cnum.value)) != "number")
+            {
+                cnumvalidate.style.color="red"
+                cnumvalidate.innerHTML="   Please Enter a valid 10 digit Phone number " 
+            }
+            else
+            {
+                cnumvalidate.style.color="lightgreen"
+                cnumvalidate.innerHTML="   Valid Phone number "
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
