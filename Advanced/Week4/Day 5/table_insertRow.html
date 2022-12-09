@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Input</title>
+
+    <style>
+        table{
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        table td, th{
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Employee Details Form</legend>
+
+            Employee No: <input type="number" id="empNo">
+            <br><br>
+            Employee Name: <input type="text" id="empName">
+            <br><br>
+            Employee Job: <input type="text" id="empJob">
+            <br><br>
+            Employee Salary: <input type="number" id="empSal">
+            <br><br>
+            <button type="submit" onclick="fn_submit(event)">Submit</button>
+        </fieldset>
+    </form>
+
+    <table id="empTable">
+        <tr>
+            <th>Employee No</th>
+            <th>Employee Name</th>
+            <th>Employee Job</th>
+            <th>Employee Salary</th>
+        </tr>
+    </table>
+
+    <script>
+
+        function fn_submit(e){
+
+            e.preventDefault();
+        
+        var tableObj = document.getElementById("empTable");
+
+        var row1 = tableObj.insertRow(-1);
+        var cell1 = row1.insertCell(0);
+        var cell2 = row1.insertCell(1);
+        var cell3 = row1.insertCell(2);
+        var cell4 = row1.insertCell(3);
+        
+
+        cell1.innerHTML = document.getElementById("empNo").value;
+        cell2.innerHTML = document.getElementById("empName").value;
+        cell3.innerHTML = document.getElementById("empJob").value;
+        cell4.innerHTML = document.getElementById("empSal").value;
+    }
+    </script>
+</body>
+</html>
