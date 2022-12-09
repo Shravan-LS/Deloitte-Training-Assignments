@@ -1,0 +1,11 @@
+1.  How to add events to html elements at runtime  using javascript?
+Answer: The addEventListener() is an inbuilt function in JavaScript which takes the event to listen for, 
+        and a second argument to be called whenever the described event gets fired. Any number of event handlers
+        can be added to a single element without overwriting existing event handlers.
+        
+        Example: element.addEventListener(event, listener, useCapture);
+    
+        event : event can be any valid JavaScript event.Events are used without “on” prefix like use “click” instead of “onclick” or “mousedown” instead of “onmousedown”.
+        listener(handler function) : It can be a JavaScript function which respond to the event occur.
+        useCapture: It is an optional parameter used to control event propagation. A boolean value is passed where “true” denotes capturing phase and “false” denotes the bubbling phase.
+
