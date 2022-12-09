@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Method</title>
+</head>
+<body>
+    
+    <script>
+        var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+        function fn_upperCase(ucase)
+        {
+            return ucase.toUpperCase();
+        }
+
+        var citiesArray2 = citiesArray.map(fn_upperCase);
+        console.log(citiesArray2);
+
+        //  Get the first three characters of the each item  (Anonymous)   //  
+
+        var citiesArray3 = citiesArray.map(function(str){
+            return str[0]+str[1]+str[2];
+        })
+
+        console.log(citiesArray3);
+
+        //  Get  the items that should replace the "a" with "@"  (Arrow) //
+
+        var citiesArray4 = citiesArray.map( (str) => {
+            let newstr = "";
+            for(i=0; i<str.length;i++)
+            {
+                if(str[i] == "a")
+                {
+                    newstr += "@";
+                }
+                else
+                {
+                    newstr += str[i];
+                }
+            }
+            return newstr;
+
+        })
+
+        console.log(citiesArray4);
+
+    </script>
+</body>
+</html>
