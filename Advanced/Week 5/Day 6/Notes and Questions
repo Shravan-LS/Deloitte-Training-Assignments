@@ -1,0 +1,10 @@
+  1. Find the details about following methods of Array: Find(),  FindIndex(),  Filter()
+Answer: find() : Returns the value of the first element that passes a test.
+        
+        findIndex() : Similar to "find" function but returns the index.
+                      The findIndex() method executes a function for each array element.
+                      The findIndex() method returns the index (position) of the first element that passes a test.
+                      The findIndex() method returns -1 if no match is found. The findIndex() method does not execute the function for empty array elements.
+        
+        
+        filter() :  Returns an array filtered down to just the elements from the original array that pass the test implemented by the provided function.
