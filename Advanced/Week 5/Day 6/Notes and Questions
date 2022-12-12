@@ -9,7 +9,7 @@ Answer: find() : Returns the value of the first element that passes a test.
         
         filter() :  Returns an array filtered down to just the elements from the original array that pass the test implemented by the provided function.
 
-How to add / remove event dynamically without using event attributes (in: onclick, ...)
+2. How to add / remove event dynamically without using event attributes (in: onclick, ...)
 Answer:    .addEventListener : The addEventListener() is an inbuilt function in JavaScript which takes the event to listen for, and a second argument to be called whenever the described event gets fired. Any number of event handlers can be added to a single element without overwriting existing event handlers. 
            .removeEventListener : removeEventListener() is an inbuilt function in JavaScript which removes an event handler from an element for a attached event.for example, if a button is disabled after one click you can use removeEventListener() to remove a click event listener. 
  
