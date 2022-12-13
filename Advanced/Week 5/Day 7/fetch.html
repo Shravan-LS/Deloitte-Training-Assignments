@@ -1,0 +1,87 @@
+3.  Create a web page to display customers data in table format.  Use fetch() to communicate with server 
+
+	url :  https://www.w3schools.com/angular/customers.php
+
+	Hint :  Update the previous  example with table tags. 
+  
+  
+  Answer:  
+  _________________________________________________________________________________________________________________________
+  <html>
+<head>
+    <style>
+        .tablediv{
+            border: 1px solid green; 
+        }
+
+        table{
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        table th, table td{
+            border: 1px solid grey;
+            padding: 0px 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h3>Asynchronous Programming in  JavaScript</h3>
+	<hr/> 
+	
+	<button  onclick="fn_getData()">Get Data </button>
+	<br/><br/>
+	<ul  id="list1"  style="border:2px solid blue; padding:30px;">
+	</ul>
+	 
+    <div class="tablediv">
+        <table id="tab">
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+            
+        </table> 
+    </div>
+
+	<script>	 
+	
+		var lstObj = document.getElementById("list1");
+        var tableObj = document.getElementById("tab");
+		
+		
+	function fn_getData()
+	{ 
+		let url = "https://www.w3schools.com/angular/customers.php";
+		
+		fetch(url).then(  (response)  => 
+		{
+			response.json().then(  (resData)  =>  
+			{ 
+					displayData(resData.records);
+			});
+		})
+        
+        .catch((error) => 
+		{
+				lstObj.innerHTML = "";
+				lstObj.innerHTML  +=  "<li  style='color:red;'>" + error +  "</li>"
+		});
+	}  
+	
+	
+	function  displayData( dataArray )
+	{
+					lstObj.innerHTML = "";
+					
+					for(let item of  dataArray)
+					{
+						lstObj.innerHTML  +=  "<li>" + item.Name + " - " +  item.City + "</li>";
+                        tableObj.innerHTML += `<tr><td> ${item.Name} </td><td> ${item.City}</td></tr>`;
+					} 
+	}
+	
+	</script>	 
+</body>
+</html>
