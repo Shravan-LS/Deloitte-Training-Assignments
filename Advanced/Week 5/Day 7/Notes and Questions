@@ -1,0 +1,19 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript? What are asynchronous functions?
+Answer.   i) setTimeout allows us to run a function once after the interval of time.
+         ii) setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+
+          Example: 
+          function sayHi() {
+            alert('Hello');
+          }
+
+          setTimeout(sayHi, 1000);
+          setInterval(sayHi, 1000);
+
+2. What is Asynchronous?
+Answer: The word asynchronous means not occurring at the same time.
+        Asynchronous JavaScript simply implies the fact that the code will not execute synchronously, it can run at any time predefined by the programmer.
+        
+        Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other
+        events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.
+        Asynchronous is a non-blocking architecture, so the execution of one task isn't dependent on another. Tasks can run simultaneously.
