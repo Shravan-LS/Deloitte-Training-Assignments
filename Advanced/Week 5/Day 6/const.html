@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sunt quaerat quam! Sunt eaque, esse minus quisquam amet non quibusdam obcaecati molestiae ipsam delectus sapiente? Dicta, expedita omnis. Sint deleniti laborum, quas placeat veniam quis minus aperiam officia aut dolorum quae voluptates dicta libero at. Autem tempora accusantium <!-- quos distinctio --> voluptatem, ratione omnis expedita doloremque dolore numquam ipsam possimus inventore ullam asperiores delectus sunt voluptatum optio amet at quae? Fugiat deleniti dolore quibusdam tempore aliquid cum fuga voluptatum. Nobis quod voluptatum odio corporis quibusdam eaque dolore recusandae eveniet id, deserunt assumenda consectetur nam nulla labore. Ea, harum. Iusto, rerum eum.</p>
+    <script>
+        const obj = {sid: 1025, sname:"Scott"};
+        console.log(obj.sid, obj.sname);
+        
+        // Reassign
+        obj.sid = 1124;
+        console.log(obj.sid);
+
+        // Re initiliaze  ==> ERROR
+        obj = {sid:111255, sname:"Shravan"};
+        console.log(obj.sid);
+    </script>
+</body>
+</html>
