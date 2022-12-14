@@ -46,7 +46,8 @@ function myFunction() {
 2. How to change text color of all paragraphs in the document using javascript?
 Answer: Select the p elements using "getElementsByTagName", then iterate over the result and set .style.color to set the required color. 
         
-        const collection = document.getElementsByTagName("p");
+        const collection = document.getElementsByTagName("p");    // OR const collection = document.querySelectorAll("p");
+        
         for(let item of collection)
         {
             item.style.color = "blue";
