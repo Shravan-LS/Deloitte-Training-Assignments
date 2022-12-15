@@ -1,4 +1,5 @@
-1. What is eval() method in JavaScript? How to use it? Check with an example?
+1. 
+a. What is eval() method in JavaScript? How to use it? Check with an example?
 Answer:  The eval() method evaluates or executes an argument.
          If the argument is an expression, eval() evaluates the expression. 
          If the argument is one or more JavaScript statements, eval() executes the statements. 
@@ -12,3 +13,16 @@ Answer:  The eval() method evaluates or executes an argument.
         Executing JavaScript from a string is an BIG security risk.
         With eval(), malicious code can run inside your application without permission.
         With eval(), third-party code can see the scope of your application, which can lead to possible attacks.
+
+b. What is the purpose of  prev() and next()  methods in jQuery?  
+Answer:  The prev() method returns the previous sibling element of the selected element.
+         Sibling elements are elements that share the same parent.
+         
+         Example: 
+         $(document).ready(function(){
+         $("li.start").prev().css({"color": "red", "border": "2px solid red"});
+         });
+         
+         
+         
+         Reference: https://www.w3schools.com/jquery/traversing_prev.asp
