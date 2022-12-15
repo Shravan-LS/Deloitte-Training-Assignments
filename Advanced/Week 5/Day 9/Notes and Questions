@@ -1,5 +1,4 @@
-1. 
-a. What is eval() method in JavaScript? How to use it? Check with an example?
+1. a. What is eval() method in JavaScript? How to use it? Check with an example?
 Answer:  The eval() method evaluates or executes an argument.
          If the argument is an expression, eval() evaluates the expression. 
          If the argument is one or more JavaScript statements, eval() executes the statements. 
@@ -14,9 +13,9 @@ Answer:  The eval() method evaluates or executes an argument.
         With eval(), malicious code can run inside your application without permission.
         With eval(), third-party code can see the scope of your application, which can lead to possible attacks.
 
-b. What is the purpose of  prev() and next()  methods in jQuery?  
+1. b. What is the purpose of  prev() and next()  methods in jQuery?  
 Answer:  The prev() method returns the previous sibling element of the selected element.
-         Sibling elements are elements that share the same parent.
+         Sibling elements are elements that share the same parent. The DOM tree: This method traverse backwards along the previous sibling of DOM elements.
          
          Example: 
          $(document).ready(function(){
@@ -25,4 +24,11 @@ Answer:  The prev() method returns the previous sibling element of the selected 
          
          
          
+         The next() method is an inbuilt method in jQuery, which returns the next sibling of the selected element.
+         This method traverses forwards along with the next sibling of DOM elements.
+         
          Reference: https://www.w3schools.com/jquery/traversing_prev.asp
+
+1. c.  How to delete all rows in a table except first row?
+Answer:  By using remove() function with slice() will remove all rows except the first one.
+         $("table tr").slice(1).remove();
