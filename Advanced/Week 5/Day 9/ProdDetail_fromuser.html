@@ -1,0 +1,85 @@
+3. Create a web page to implement the following requirement:
+		a.  Read product details from user
+		b. Add a new row to table with the product details 
+
+
+<html>
+ <head> 
+ </head>
+ <body>
+	<h3> jQuery Programming  - DOM Traversing</h3>
+	<hr />
+		
+	 <input id="t1" placeholder="product name" />
+	<input id="t2" placeholder="unit price " />
+	<input id="t3" placeholder="quantity" />
+    <button id="btn" onclick="fn_btnclick()">Add</button>
+	<br></br> 
+
+ <table id="table1" border="2" width="400px">
+	<tr>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	<tr>	
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>4GB-RAM</td>
+		<td>1200.00</td>
+		<td>23</td>
+	</tr>	 
+	<tr>
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>
+	<tr>
+		<td>Wifi Router</td>
+		<td>1800.00</td>
+		<td>15</td>
+	</tr> 
+	</table>  
+		 
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		function fn_btnclick(){
+            $(document).ready(function()
+            {
+                var pname = $("#t1").val();	
+                var price = $("#t2").val();	
+                var qty = $("#t3").val();
+                var str = `<tr><td>${pname}</td><td>${price}</td><td>${qty}</td></tr>`;
+                $("#table1").append(str); 
+            });
+
+            // $("#btn").click(function(){
+            //     var pname = $("#t1").val();
+            //     var price = $("#t2").val();
+            //     var qty = $("#t3").val();
+            //     var str = `<tr><td>${pname}</td><td>${price}</td><td>${qty}</td></tr>`;
+            //     $("#table1").append(str); 
+            // })
+    }
+				
+	</script>
+	
+ </body>
+</html>
