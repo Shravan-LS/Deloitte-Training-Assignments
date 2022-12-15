@@ -1,0 +1,121 @@
+// 4.  Create a web page to perform the following operations using jquery:	
+		a.  Get product details from user:		Product Name, Unit Price, Quantity
+		b.  Display total amount based on price and qty
+		c.   If the qty is greater than 10,  give 10% discount on total amount //
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .d1{
+            margin: 20px;  
+        }
+
+        .d2{
+            background-color: lightgrey;
+            padding: 20px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <h1>Product Details From User</h1>
+    <hr>
+
+    <div class="d1">
+        <fieldset>
+            <div class="d2">
+                Product Name: <select id="s1">
+                    <option>Select</option>
+                    <option>Strawberry Mouse Pastry</option>
+                    <option>Black Forest Pastry</option>
+                    <option>Dutch Truffle Pastry</option>
+                </select>
+                <br><br>
+            
+                Unit Price: <input type="number" disabled id="uPrice">
+                <br><br>
+
+                Unit Quantity: <input type="number" id="uQty">
+                <br><br>
+
+                Total Amount: <input disabled type="number" id="total">
+                <br><br>
+
+                <div id="d3">
+                    Discount: <input type="number" disabled id="dTotal">
+                    <br><br>
+                </div>
+
+                <button onclick="btn()">Get Total</button>
+            </div>
+        </fieldset>
+    </div>
+
+    
+
+    <script>
+
+        $("#s1").change(function()
+        {
+            var item = $("#s1").val();
+            var x = 0;
+            // console.log(item);
+
+            if(item == "Strawberry Mouse Pastry")
+            {
+              x = 320;
+            }
+
+            else if(item == "Black Forest Pastry")
+            {
+              x = 280;  
+            }
+
+            else if(item == "Dutch Truffle Pastry")
+            {
+              x = 440;
+            }
+
+            $("#uPrice").val(x);
+            
+        })
+        
+
+        function btn(){
+            var price = $("#uPrice").val();
+            var y = $("#uQty").val();
+            var z = parseInt(price) *  parseInt(y);
+            $("#total").val(z)
+            
+            if($("#uQty").val()<=10)
+            {   
+                $("#d3").css("display","none");
+            }
+
+            else
+            {
+                $("#d3").css("display","block");
+                const discount = parseInt(z) * 0.9;
+                $("#dTotal").val(discount);
+            }
+            
+        }        
+        
+    </script>
+</body>
+</html>
