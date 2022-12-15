@@ -32,3 +32,4 @@ Answer:  The prev() method returns the previous sibling element of the selected 
 1. c.  How to delete all rows in a table except first row?
 Answer:  By using remove() function with slice() will remove all rows except the first one.
          $("table tr").slice(1).remove();
+          $("table tr").not(:first).remove();
