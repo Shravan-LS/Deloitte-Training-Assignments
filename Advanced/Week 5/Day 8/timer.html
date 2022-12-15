@@ -8,15 +8,17 @@
     <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 </head>
 <body>
-    <span id="minutes">00</span>
-    <span>:</span>
-    <span id="seconds">00</span>
-    <span>:</span>
-    <span id="tenmilliseconds">00</span>
+    <div class="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span>:</span>
+        <span id="tenmilliseconds">00</span>
 
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="reset()">Reset</button>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
 
     <script>
         let minutes = 0;
