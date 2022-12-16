@@ -16,6 +16,11 @@ Answer: To add a new class, we use jQuery addClass() method.
                   
                   
  2. How to apply effect based on width property?
- Answer: The Size effect can be used with effect() method. This resizes an element to a specified width and height.
-         
+ Answer: The animate() method performs a custom animation of a set of CSS properties. 
+         Syntax: (selector).animate({styles},speed,easing,callback)
+
+ 
+ 
+        The Size effect can be used with effect() method. This resizes an element to a specified width and height.
+     
          Example: selector.effect( "size", {arguments}, speed );
