@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <title>Vehicle Information</title>
+
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Vehicle Information</h1>
+    <hr>
+
+    Person Name: <input type="text" id="pName">
+    <br><br>
+    Person Contact Number: <input type="number" id="pnum">
+    <br><br>
+    Vehicle Number: <input type="text" id="vNum">
+    <br><br>
+    City Name: <input type="text" id="cName">
+    <br><br>
+
+
+
+<script>
+
+ $(document).ready(function(){
+    $("#pName").keyup(function(){
+        $("#span1").remove();
+        var inputVal1 = $("#pName").val();
+
+        var nameReg = /^[a-z|A-Z]{0,10}$/;
+
+
+        if(  nameReg.test(inputVal1)  ==  false  &&  inputVal1.length >  0) 
+							{
+								$(this).after('<span id="span1"  class="error"> Numeric characters below 10 characters only.</span>');
+							}
+    })
+
+    $("#pnum").keyup(function(){
+        $("#span2").remove();
+        var inputVal2 = $("#pnum").val();
+
+        var pNumReg = /^[0-9]{10}$/;
+
+
+        if(  pNumReg.test(inputVal2)  ==  false ) 
+							{
+								$(this).after('<span id="span2"  class="error"> Enter 10 numbers.</span>');
+							}
+    })
+
+    $("#vNum").keyup(function(){
+        $("#span3").remove();
+        var inputVal3 = $("#vNum").val();
+
+        var vNumReg = /^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$/;
+
+
+        if(  vNumReg.test(inputVal3)  ==  false && inputVal3.length >  0) 
+							{
+								$(this).after('<span id="span3"  class="error"> Enter valid Vehicle number in AB12CD1234 format.</span>');
+							}
+    })
+
+
+    $("#cName").keyup(function(){
+        $("#span4").remove();
+        var inputVal4 = $("#cName").val();
+
+        var cNameReg = /^[A-Z]+$/;
+
+
+        if(  cNameReg.test(inputVal4)  ==  false && inputVal4.length >  0 ) 
+							{
+								$(this).after('<span id="span4"  class="error"> Enter in Capitals.</span>');
+							}
+    })
+ })
+</script>
+</body>
+</html>
