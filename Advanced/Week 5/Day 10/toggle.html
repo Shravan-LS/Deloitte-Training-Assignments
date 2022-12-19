@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .c1{
+            border: 1px solid black;
+            margin: 20px 0px;
+            padding: 20px;
+        }
+
+        .cp1{
+            font-weight: bold;
+        }
+
+        .cp2{
+            text-decoration: underline;
+        }
+
+        .cp3{
+            font-style: italic;
+        }
+
+        .bttn1{
+            background-color: rgb(13, 132, 183);
+            font-weight: bold;
+            color: white;
+            border: 1px rgb(36, 35, 35) solid;
+        }
+
+        .bttn2{
+            background-color: rgb(73, 183, 13);
+            text-decoration: underline;
+            color: white;
+            border: 1px rgb(31, 30, 30) solid;
+        }
+        
+        .bttn3{
+            background-color: rgb(183, 13, 64);
+            font-style: italic;
+            color: white;
+            border: 1px rgb(31, 30, 30) solid;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button id="btn1">B</button>
+    <button id="btn2">U</button>
+    <button id="btn3">I</button>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cupiditate itaque doloremque in provident, quibusdam esse autem velit et eius deleniti excepturi assumenda sunt fugit ut totam temporibus maxime. Provident est quas quasi recusandae aliquid veniam dolor maiores necessitatibus a non itaque cum, natus sequi placeat delectus id doloremque impedit, minus qui hic, voluptas quaerat officia. Laudantium id adipisci aliquam. Quibusdam sapiente ex et explicabo, recusandae, laudantium excepturi, molestiae pariatur magnam blanditiis modi ipsum commodi quam repudiandae eum soluta voluptas possimus eius doloremque architecto. Accusantium sequi quis distinctio ea at quos cumque, reiciendis laboriosam commodi molestiae, ut hic ullam aliquam.</p>
+    </div>  
+
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script>
+        $("document").ready(function()
+        {
+            $("div").addClass("c1");
+
+            $("#btn1").click(function(){
+                $("#btn1").toggleClass("bttn1");
+                $("p").toggleClass("cp1");
+            })
+
+            $("#btn2").click(function(){
+                $("#btn2").toggleClass("bttn2");
+                $("p").toggleClass("cp2");
+            })
+
+            $("#btn3").click(function(){
+                $("#btn3").toggleClass("bttn3");
+                $("p").toggleClass("cp3");
+            })
+
+        });
+    </script>
+</body>
+</html>
