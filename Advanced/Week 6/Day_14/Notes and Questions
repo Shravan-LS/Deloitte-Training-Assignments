@@ -25,3 +25,10 @@ Answer:  Percent Pipe: Transforms a number to a percentage string, formatted acc
          Example: {{ rounding_value | number : '1.2-2'}} will round a number to 2 decimal points.
 
          (For more reading on the same, refer: https://www.angularjswiki.com/angular/angular-decimal-pipe/)
+
+         DecimalPipe and PercentPipe in Angular?  Check with an example?
+---- DecimalPipe is used to format a number as decimal number according to locale rules. It uses number keyword with pipe operator.
+number_expression | number[:digitInfo]
+
+Angular PercentPipe is an angular Pipe API that formats a number as a percentage according to locale rules.
+number_expression | percent[:digitInfo]
