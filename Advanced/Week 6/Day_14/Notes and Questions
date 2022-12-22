@@ -18,3 +18,6 @@ Answer: Git Bash is an application for Microsoft Windows environments which prov
         Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. 
         Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, 
         and Git on a Windows operating system.
+
+4.   How to use DecimalPipe and PercentPipe in Angular?  Check with an example?
+Answer:
