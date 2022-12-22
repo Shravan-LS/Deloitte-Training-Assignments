@@ -1,0 +1,15 @@
+What are pipes in Angular?? Pre-defined Pipes
+Answer: Angular Pipes transform the output. They are mainly used to format the data before displaying it to the user. 
+        A pipe takes expression value as an input and transforms it into the desired output. Below is the list of inbuilt pipes in Angular:
+        Uppercase
+        Lowercase
+        titlecase
+        currency
+        date
+        slice
+        percent
+        decimal
+        Icon
+        i18nselect
+        i18nplural
+
