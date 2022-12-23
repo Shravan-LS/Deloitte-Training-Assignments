@@ -1,2 +1,2 @@
 What is the role collaborators in github? Why  do we need to add collaborators to github repository?
-Answer: A repository owned by a personal account has two permission levels: the repository owner and collaborators.Collaborators on a personal repository can pull (read) the contents of the repository and push (write) changes to the repository.
+Answer: A repository owned by a personal account has two permission levels: the repository owner and collaborators.Collaborators on a personal repository can pull             (read) the contents of the repository and push (write) changes to the repository.
