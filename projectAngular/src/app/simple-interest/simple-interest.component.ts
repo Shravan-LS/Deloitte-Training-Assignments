@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './simple-interest.component.html',
   styleUrls: ['./simple-interest.component.css']
 })
-export class SimpleInterestComponent {
-
+  export class SimpleInterestComponent {
   principleAmount:number=0;
   rate:number=0;
   timePeriod:number=0;
