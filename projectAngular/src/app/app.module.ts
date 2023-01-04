@@ -6,12 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { SimpleInterestComponent } from './simple-interest/simple-interest.component';
+import { CRUDComponent } from './crud/crud.component';
+import { EmployeesGradesComponent } from './employees-grades/employees-grades.component';
+import { GradespipePipe } from './gradespipe.pipe';
+import { EmployeeSalaryComponent } from './employee-salary/employee-salary.component';
+import { SalarypipePipe } from './salarypipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponentComponent,
-    SimpleInterestComponent
+    SimpleInterestComponent,
+    CRUDComponent,
+    EmployeesGradesComponent,
+    GradespipePipe,
+    EmployeeSalaryComponent,
+    SalarypipePipe
   ],
   imports: [
     BrowserModule,

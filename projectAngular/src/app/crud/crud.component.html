@@ -1,0 +1,32 @@
+<span class="titles">ID: </span><input type="number" [(ngModel)] = "pid">
+<br><br>
+
+<span class="titles">Name: </span><input type="text" [(ngModel)] = "name">
+<br><br>
+
+<span class="titles">Price: </span><input type="text" [(ngModel)] = "price">
+<br><br>
+
+<span class="titles">Category: </span><input type="text" [(ngModel)] = "quantity">
+<br><br>
+
+<span class="titles">Quantity: </span><input type="text" [(ngModel)] = "category">
+<br><br>
+
+<button (click)="addButton_click()">Add Product</button>
+<button >Update Product</button>
+<button >Reset</button>
+
+<div class="overall" >
+    <div class="catelog" *ngFor="let item of prodArray; let i = index">
+    <p>{{item.pid}}</p>
+    <p>{{item.name | uppercase}}</p>
+    <p>{{item.price}}</p>
+    <p>{{item.category}}</p>
+    <p>{{item.quantity}}</p>
+    </div>
+</div>
+
+<div>
+
+</div>

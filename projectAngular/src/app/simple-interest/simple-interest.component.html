@@ -24,5 +24,14 @@
     
     </fieldset>
     
+    <div *ngFor="let item of items; let i = index">
+        <p>The index of {{item}} is: {{i}}</p>
+    </div>
+
+    <!-- <div *ngFor="let item of items; index as i;">
+        <p>The index of {{item}} is: {{i}}</p>
+    </div> -->
+
+
     </div>
     

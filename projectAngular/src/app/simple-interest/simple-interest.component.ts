@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
   rate:number=0;
   timePeriod:number=0;
   simpleInterest:number=0; 
+  items:number[]=[10,20,30,40];
 
   calculate_click():void
   {
