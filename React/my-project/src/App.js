@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import StudentComponent from './studentComponent';
+import DoctorComponent from './DoctorComponent'
 function App() {
   
   return(
   <div>
-   <StudentComponent/>
+   <DoctorComponent/>
   </div>
 )
 
