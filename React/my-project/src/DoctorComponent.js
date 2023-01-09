@@ -20,12 +20,17 @@ return(
             {docArray.map(item =>
                 <div key={item.id}>
                     <div className="card">
+                        
                         <img src={item.src}></img>
+                        
                         <h2>{item.dname}</h2>
+                        
                         {[...Array(item.rate)].map((item, index) =>
                         <img className="star" key={index} src="https://www.citypng.com/public/uploads/small/11659043903eyvtsezy4ggvxqpml1vm20llfrhutwvziycxyopxjeexufvl7arkm3fduk80kwyi2vuxie3ootphq1kvtyqibnzb58i3gylfrbz5.png"></img>
                         )}
+                        
                         <h5>{item.profession}</h5>
+                        
                         <button>Book Appoinment</button>
                     </div>
                 </div>
