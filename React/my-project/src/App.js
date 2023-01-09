@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import DoctorComponent from './DoctorComponent'
+import ProdList from './ProductList';
 function App() {
   
   return(
   <div>
-   <DoctorComponent/>
+   <ProdList category="laptop"/>
+   {/* <ProdList category="phone"/> */}
+   {/* <ProdList category=""/> */}
   </div>
 )
 
