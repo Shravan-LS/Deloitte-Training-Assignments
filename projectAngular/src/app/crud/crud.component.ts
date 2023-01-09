@@ -7,32 +7,69 @@ import { Component } from '@angular/core';
 })
 export class CRUDComponent {
 
-  pid:number = 0;
-  name:string="";
-  price:number=0;
-  category:string="";
-  quantity:number=0;
+  deptno:number = 0;
+  dname:string = "";
+  loc:string = "";
 
-  prodArray:any[] = 
-  [
-  {pid : 1, name : "Prd1",  price :  "1000", category : "cat1", qunatity: 1},
-  {pid : 2, name : "Prd1",  price :  "1000", category : "cat1", qunatity: 1},
-  {pid : 3, name : "Prd1",  price :  "1000", category : "cat1", qunatity: 1},
-  {pid : 4, name : "Prd1",  price :  "1000", category : "cat1", qunatity: 1},
-  {pid : 5, name : "Prd1",  price :  "1000", category : "cat1", qunatity: 1}
+  deptsArray:any[] = [
+    {deptno : 10, dname : "Accounts",  loc :  "Hyd"} ,
+    {deptno : 20, dname : "Sales",  loc :  "Pune"},
+    {deptno : 30, dname : "Marketing",  loc :  "Hyd"}
   ];
 
   addButton_click():void
   {
-      let prodObj:any = {};
+      let deptObj:any = {};
 
-      prodObj.pid = this.pid;
-      prodObj.name = this.name;
-      prodObj.price = this.price;
-      prodObj.category = this.category;
-      prodObj.quantity = this.quantity;
+      deptObj.deptno = this.deptno;
+      deptObj.dname = this.dname;
+      deptObj.loc = this.loc;
 
-      this.prodArray.push( prodObj );
+      this.deptsArray.push( deptObj );
   }
+
+  /*
+  // remote dept based on index
+  removeButton_click(deptIndex:number):void
+  {
+    //  this.deptsArray.pop( );
+      this.deptsArray.splice(deptIndex,1);  
+  }
+  */
+
+  // remote dept based on deptno
+  removeButton_click(dno:number):void
+  {    
+    //  alert(dno);
+      let index:number  = this.deptsArray.findIndex( item => item.deptno == dno );
+      this.deptsArray.splice(index,1);  
+  }
+
+  selectButton_click(dno:number):void
+  {    
+    
+     let deptObj:any = this.deptsArray.find( item => item.deptno == dno );
+    
+     this.deptno = deptObj.deptno;
+     this.dname = deptObj.dname;
+     this.loc = deptObj.loc;
+      
+    
+  }
+
+  updateButton_click():void
+  {    
+    /*
+    let deptObj:any = this.deptsArray.find( item => item.deptno == this.deptno );
+    deptObj.dname = this.dname;
+    deptObj.loc = this.loc;
+    */
+
+    let index:number  = this.deptsArray.findIndex( item => item.deptno == this.deptno );
+    this.deptsArray[index].dname = this.dname;
+    this.deptsArray[index].loc = this.loc;    
+
+  }
+
 
 }
