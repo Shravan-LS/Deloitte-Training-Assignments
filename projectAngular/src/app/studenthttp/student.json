@@ -1,0 +1,60 @@
+{
+  "employee": [
+    {
+      "empno": 1,
+      "ename": "Scott",
+      "job": "Hyderabad",
+      "salary": "75000",
+      "deptno": "25"
+    },
+    {
+      "empno": 2,
+      "ename": "James",
+      "job": "Pune",
+      "salary": "70000",
+      "deptno": "26"
+    },
+    {
+      "empno": 3,
+      "ename": "Naveen",
+      "job": "Chennai",
+      "salary": "73000",
+      "deptno": "24"
+    },
+    {
+      "ename": "Naveen",
+      "job": "Chennai",
+      "salary": "76000",
+      "deptno": "24",
+      "empno": 5
+    },
+    {
+      "ename": "Narasimha",
+      "job": "Hyd",
+      "salary": "68000",
+      "deptno": "24",
+      "empno": 6
+    },
+    {
+      "empno": 7,
+      "ename": "Narasimha",
+      "job": "Hyd",
+      "salary": "79000",
+      "deptno": "24"
+    },
+    {
+      "ename": "Kiran Kumar",
+      "job": "Pune",
+      "salary": "68546",
+      "deptno": "26",
+      "empno": 9
+    },
+    {
+      "empno": 10,
+      "ename": "Shravan",
+      "job": "Mum",
+      "salary": "888888",
+      "deptno": "25"
+    }
+  ]
+}

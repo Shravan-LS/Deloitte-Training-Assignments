@@ -1,0 +1,16 @@
+1.a. What is MVC?
+Answer: MVC: MVC stands for Model-View-Controller. It's a design pattern that breaks an application into three parts: the data (Model), the presentation of that data to the user (View), and the actions taken on any user interaction (Controller).
+
+1.b. What is MVVM?
+Answer: MVVM (Model View ViewModel) is an architectural pattern based on MVC and MVP, which attempts to more clearly separate the development of user interfaces (UI) from that of the business logic and behavior in an application.
+
+
+2. What are keys in React JS? How involve keys in array processing in React?
+Answer: A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists.
+
+        Example:    <tr key={item.sid}>
+
+
+3.  Create a react component to display student details in table format
+		a. Student Details :   sid, sname, course, age, total
+Answer: React --> studentComponent
