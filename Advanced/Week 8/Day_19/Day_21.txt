@@ -1,0 +1,2 @@
+1. What is Single Responsibility Principle?
+Answer: The Single Responsibility Principle (SRP) is the concept that any single object in object-oriented programing (OOP) should be made for one specific function. SRP is part of SOLID programming principles put forth by Robert Martin. Traditionally, code that is in keeping with SRP has a single function per class.

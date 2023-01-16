@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 // import ProdList from './ProductList';
-import StudentCrud from './StudentCrud';
+// import StudentCrud from './StudentCrud';
+import Product from './ProductData';
 function App() {
   
   return(
   <div>
    
-   <StudentCrud/>
+   <Product/>
    
    {/* <ProdList category="laptop"/> */}
    {/* <ProdList category="phone"/> */}

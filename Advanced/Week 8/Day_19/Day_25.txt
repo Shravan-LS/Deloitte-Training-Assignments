@@ -1,0 +1,5 @@
+    1. What does unit testing mean?
+    Answer: A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method or property. The isolated part of the definition is important.
+
+    2. Why do we do unit testing?
+    Answer: With unit testing, developers can have more control over their individual code block quality before integrating different components and then sent for regression testing. Also, it is easier to identify and rectify mistakes or defects at the code level.
